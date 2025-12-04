@@ -1,6 +1,6 @@
 import http.client
 
-def find_hue_bridge(subnet="192.168.1"):
+def find_hue_bridge(subnet="192.168.0.193"):
     def is_hue(ip):
         try:
             conn = http.client.HTTPConnection(ip, 80, timeout=0.2)
